@@ -5,9 +5,8 @@ export function JsonLd() {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     name: SITE.name,
-    description: "AI-powered business operations partner for small businesses — website, content, leads, follow-ups, and strategy.",
+    description: "AI-powered business operations for small businesses. Website, content, leads, follow-ups, and strategy. One person, everything handled.",
     url: SITE.url,
-    telephone: SITE.phone,
     email: SITE.email,
     areaServed: {
       "@type": "Country",
@@ -24,7 +23,7 @@ export function JsonLd() {
       addressCountry: "US",
     },
     serviceType: SERVICES.map((s) => s.title),
-    priceRange: "$1,000-$2,500/month",
+    priceRange: "$$",
   };
 
   const serviceSchema = {
@@ -39,19 +38,11 @@ export function JsonLd() {
       "@type": "Country",
       name: "United States",
     },
-    description: "All-inclusive AI-powered business operations — website, content, leads, follow-ups, reviews, and strategy for small businesses.",
+    description: "All-inclusive AI-powered business operations for small businesses. Website, content, leads, follow-ups, reviews, and strategy.",
     offers: {
       "@type": "Offer",
-      price: "1000",
-      priceCurrency: "USD",
-      priceSpecification: {
-        "@type": "UnitPriceSpecification",
-        price: "1000",
-        priceCurrency: "USD",
-        unitText: "MONTH",
-        minPrice: "1000",
-        maxPrice: "1500",
-      },
+      availability: "https://schema.org/InStock",
+      description: "Custom pricing based on business needs. Request a quote for details.",
     },
   };
 

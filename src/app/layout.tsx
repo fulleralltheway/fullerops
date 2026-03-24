@@ -1,22 +1,27 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Outfit, Instrument_Serif } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { JsonLd } from "@/components/JsonLd";
 
-const inter = Inter({
-  variable: "--font-geist-sans",
+const outfit = Outfit({
+  variable: "--font-body",
   subsets: ["latin"],
 });
 
+const instrumentSerif = Instrument_Serif({
+  variable: "--font-display",
+  subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
+});
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://fullerops.com"),
   title: {
-    default: "Fuller Ops — AI-Powered Business Operations for Small Businesses",
-    template: "%s | Fuller Ops",
+    default: "FullerOps | AI-Powered Business Operations for Small Businesses",
+    template: "%s | FullerOps",
   },
   description:
-    "I build and run your entire digital operation — website, content, leads, follow-ups, reviews — so you can focus on your business. Free online presence audit.",
+    "I build and run your entire digital operation. Website, content, leads, follow-ups, reviews. One person handles everything so you can focus on your business. Free online presence audit.",
   keywords: [
     "AI business partner",
     "small business operations",
@@ -26,17 +31,20 @@ export const metadata: Metadata = {
     "website design",
     "SEO for small business",
   ],
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "Fuller Ops",
-    title: "Fuller Ops — AI-Powered Business Operations",
+    siteName: "FullerOps",
+    title: "FullerOps | AI-Powered Business Operations",
     description:
-      "I build and run your entire digital operation — website, content, leads, follow-ups, reviews — so you can focus on your business.",
+      "I build and run your entire digital operation. Website, content, leads, follow-ups, reviews. One person, everything handled.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fuller Ops — AI-Powered Business Operations",
+    title: "FullerOps | AI-Powered Business Operations",
     description:
       "I build and run your entire digital operation for small businesses.",
   },
@@ -53,11 +61,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased`}>
-        <JsonLd />
-        <Header />
-        <main>{children}</main>
-        <Footer />
+      <body className={`${outfit.variable} ${instrumentSerif.variable} antialiased grain`}>
+        <a href="#main-content" className="skip-to-content">Skip to content</a>
+        {children}
       </body>
     </html>
   );

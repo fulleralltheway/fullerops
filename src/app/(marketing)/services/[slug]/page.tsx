@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { INDUSTRIES, SITE } from "@/lib/constants";
+import { INDUSTRIES } from "@/lib/constants";
 
 const INDUSTRY_DETAILS: Record<
   string,
@@ -17,7 +17,7 @@ const INDUSTRY_DETAILS: Record<
   "real-estate": {
     headline: "Your Competitor Has 47 Google Reviews. You Have 3.",
     subheadline:
-      "I build and run your entire digital operation — website, content, leads, follow-ups, reviews — so you can focus on showings and closings.",
+      "I build and run your entire digital operation so you can focus on showings and closings. Website, content, leads, follow-ups, reviews. All handled.",
     problems: [
       "Your website is a generic IDX template that looks like every other agent's",
       "Your Instagram hasn't been posted to in weeks",
@@ -26,23 +26,23 @@ const INDUSTRY_DETAILS: Record<
       "You know you should ask for reviews but never get around to it",
     ],
     solutions: [
-      "A website that actually generates leads — not a generic template, but a fast site with property search, neighborhood guides, and lead capture",
-      "Content in your voice, on schedule — social media posts, blog articles, and email newsletters every week without you lifting a finger",
-      "FSBO and expired listing monitoring — opportunities delivered to you automatically",
-      "Follow-up sequences that nurture every lead — past client check-ins that generate referrals",
-      "Review request automation after every closing — your review count grows every month",
+      "A website that actually generates leads. Not a generic template, but a fast site with property search, neighborhood guides, and real lead capture.",
+      "Content in your voice, posted on schedule. Social media, blog articles, and email newsletters every week without you lifting a finger.",
+      "FSBO and expired listing monitoring. Opportunities delivered to you automatically so you can reach out first.",
+      "Follow-up sequences that nurture every lead. Past client check-ins that generate referrals on autopilot.",
+      "Review requests sent automatically after every closing. Your Google review count climbs every single month.",
     ],
     results: [
       { day: "Day 30", items: ["Website live or optimized", "Content posting weekly", "Google Business optimized"] },
       { day: "Day 60", items: ["New leads coming in", "Follow-up sequences running", "Review requests going out"] },
       { day: "Day 90", items: ["More Google reviews", "Higher search visibility", "Measurable lead increase"] },
     ],
-    pitch: "The agent down the street has a beautiful website, posts daily, and has 50+ reviews. The difference isn't talent — it's systems. I build the system.",
+    pitch: "The agent down the street has a beautiful website, posts daily, and has 50+ reviews. The difference isn't talent. It's systems. I build the system.",
   },
   "lawn-care": {
     headline: "You're Losing Jobs to the Company That Shows Up First on Google.",
     subheadline:
-      "I build and run your entire online presence — website, booking, content, reviews, follow-ups — so you can focus on the work.",
+      "I build and run your entire online presence so you can focus on the work. Website, booking, content, reviews, follow-ups. All handled.",
     problems: [
       "You don't have a real website (or it's a single page from 2015)",
       "You get all your work from word of mouth and hope it keeps coming",
@@ -51,11 +51,11 @@ const INDUSTRY_DETAILS: Record<
       "You have zero online reviews while competitors have dozens",
     ],
     solutions: [
-      "A professional website with online booking — customers find you, see your work, and book without calling",
-      "Google Business domination — optimized profile, reviews rolling in, showing up in local searches",
-      "Before/after photo galleries and seasonal content that showcase your quality",
-      "Follow-up sequences for every estimate — no more wondering if they went with someone else",
-      "Seasonal campaigns — spring cleanup, fall leaf removal, winterization — timed and automated",
+      "A professional website with online booking. Customers find you, see your work, and book without calling.",
+      "Google Business domination. Optimized profile, reviews rolling in, showing up in the local map pack.",
+      "Before/after photo galleries and seasonal content that showcase the quality of your work.",
+      "Follow-up sequences for every estimate. No more wondering if they went with someone else.",
+      "Seasonal campaigns timed and automated. Spring cleanup, fall leaf removal, winterization. All planned ahead and executed on schedule.",
     ],
     results: [
       { day: "Day 30", items: ["Professional website live with booking", "Google Business optimized", "First content posted"] },
@@ -67,7 +67,7 @@ const INDUSTRY_DETAILS: Record<
   restaurants: {
     headline: "Your Instagram Hasn't Been Posted to in 3 Weeks.",
     subheadline:
-      "I handle your entire online presence — social media, reviews, website, email list — so you can focus on the food.",
+      "I handle your entire online presence so you can focus on the food. Social media, reviews, website, email list. All running without you.",
     problems: [
       "You started strong on social media, then got slammed on a Friday and never posted again",
       "Your menu on the website doesn't match what you're actually serving",
@@ -76,11 +76,11 @@ const INDUSTRY_DETAILS: Record<
       "Seasonal promotions get planned but never executed",
     ],
     solutions: [
-      "Daily social media content — food features, behind-the-scenes, specials — posted consistently in your voice",
-      "Website with current menu, hours, online ordering or reservations — always up to date",
-      "Review request automation — every happy customer gets asked, your rating climbs",
-      "Email marketing that keeps regulars coming back — weekly specials, events, loyalty touches",
-      "Seasonal campaigns planned and executed automatically — Valentine's, patio season, holidays",
+      "Daily social media content. Food features, behind-the-scenes, specials. Posted consistently in your voice every single day.",
+      "Website with current menu, hours, and online ordering or reservations. Always accurate, always up to date.",
+      "Review request automation. Every happy customer gets asked, and your rating climbs month over month.",
+      "Email marketing that keeps regulars coming back. Weekly specials, events, loyalty touches that feel personal.",
+      "Seasonal campaigns planned and executed automatically. Valentine's, patio season, holidays. All handled ahead of time.",
     ],
     results: [
       { day: "Day 30", items: ["Daily social media posting", "Website updated", "Google Business optimized"] },
@@ -92,20 +92,20 @@ const INDUSTRY_DETAILS: Record<
   coaches: {
     headline: "You're Spending 10 Hours a Week on Marketing That Isn't Converting.",
     subheadline:
-      "I build and run your lead funnel, content engine, and follow-up system — so you can focus on your clients.",
+      "I build and run your lead funnel, content engine, and follow-up system so you can focus on your clients.",
     problems: [
-      "Your website looks fine but generates zero leads — no lead magnet, no funnel",
+      "Your website looks fine but generates zero leads. No lead magnet, no funnel.",
       "Writing a single LinkedIn post takes 45 minutes, so you don't do it",
       "People visit your site, leave, and you never hear from them again",
       "Discovery calls turn into 'let me think about it' and then nothing",
       "You have happy clients but only 2 testimonials on your website",
     ],
     solutions: [
-      "A lead magnet funnel — free guide or assessment, email capture, nurture sequence, booking page",
-      "Content engine in your voice — weekly blog posts, daily social media, monthly newsletter",
-      "Website that converts — clear offer, CTA above the fold, booking integration, testimonials front and center",
-      "Follow-up automation — every discovery call gets a nurture sequence, every past client gets check-ins",
-      "Testimonial collection system — automated requests at the right moments, specific prompts that get great quotes",
+      "A lead magnet funnel. Free guide or assessment, email capture, nurture sequence, and a booking page that converts.",
+      "Content engine in your voice. Weekly blog posts, daily social media, monthly newsletter. All written and published for you.",
+      "Website that converts. Clear offer, CTA above the fold, booking integration, testimonials front and center.",
+      "Follow-up automation. Every discovery call gets a nurture sequence. Every past client gets regular check-ins.",
+      "Testimonial collection system. Automated requests at the right moments with specific prompts that get great quotes.",
     ],
     results: [
       { day: "Day 30", items: ["Website optimized with lead magnet", "Content engine running", "Booking integration live"] },
@@ -117,7 +117,7 @@ const INDUSTRY_DETAILS: Record<
   insurance: {
     headline: "How Many Renewals Slipped Because Nobody Followed Up?",
     subheadline:
-      "I build and run your digital operation — renewals, referrals, content, reviews, website — so no client ever falls through the cracks.",
+      "I build and run your digital operation so no client ever falls through the cracks. Renewals, referrals, content, reviews, website. All systematized.",
     problems: [
       "Renewals slip because you're juggling too many policies manually",
       "Your best customers have been with you 10 years and never been asked for a referral",
@@ -126,11 +126,11 @@ const INDUSTRY_DETAILS: Record<
       "Your website is the generic template your agency gave you",
     ],
     solutions: [
-      "Renewal reminder automation — timed sequences before every renewal, nothing slips ever",
-      "Referral system — automated requests at the right moments, tracked and systematized",
-      "Compliant content in your voice — insurance tips, coverage guides, seasonal reminders",
-      "Review collection — systematic requests after every new policy and renewal",
-      "Website that builds trust — shows who you are, why people choose you, easy quote request",
+      "Renewal reminder automation. Timed sequences before every renewal date. Nothing slips. Ever.",
+      "Referral system. Automated requests at the right moments, tracked and systematized so referrals happen by design, not accident.",
+      "Compliant content in your voice. Insurance tips, coverage guides, seasonal reminders. All reviewed and on brand.",
+      "Review collection. Systematic requests after every new policy and renewal. Your count grows every month.",
+      "Website that builds trust. Shows who you are, why people choose you, with an easy quote request form.",
     ],
     results: [
       { day: "Day 30", items: ["Website live or improved", "Renewal system active", "Content engine running"] },
@@ -155,7 +155,7 @@ export async function generateMetadata({
   if (!industry) return {};
   return {
     title: `AI Operations for ${industry.name}`,
-    description: `${industry.headline} I build and run your entire digital operation — website, content, leads, follow-ups, reviews. Free audit.`,
+    description: `${industry.headline} I build and run your entire digital operation. Website, content, leads, follow-ups, reviews. Free audit.`,
   };
 }
 
@@ -176,8 +176,8 @@ export default async function IndustryPage({
       <section className="pt-28 pb-20 sm:pt-36 sm:pb-28 bg-primary text-white">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <div className="text-sm font-medium text-accent mb-4">
-              {industry.icon} {industry.name}
+            <div className="text-sm font-semibold text-accent tracking-widest uppercase mb-4">
+              {industry.name}
             </div>
             <h1 className="text-4xl sm:text-5xl font-bold leading-tight">
               {details.headline}
@@ -188,7 +188,7 @@ export default async function IndustryPage({
             <div className="mt-10">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-lg bg-accent px-8 py-4 text-base font-semibold text-white hover:bg-accent-hover transition-colors"
+                className="inline-flex items-center justify-center rounded-lg bg-accent px-8 py-4 text-base font-semibold text-white hover:bg-accent-hover transition-colors press-scale"
               >
                 Get Your Free Audit
               </Link>
@@ -205,7 +205,7 @@ export default async function IndustryPage({
             {details.problems.map((problem) => (
               <div
                 key={problem}
-                className="flex items-start gap-4 p-5 rounded-lg bg-muted-light"
+                className="flex items-start gap-4 p-5 rounded-lg bg-muted-light problem-card"
               >
                 <svg
                   className="w-6 h-6 text-accent flex-shrink-0 mt-0.5"
@@ -238,7 +238,7 @@ export default async function IndustryPage({
             {details.solutions.map((solution) => (
               <div
                 key={solution}
-                className="flex items-start gap-4 p-5 rounded-lg bg-white"
+                className="flex items-start gap-4 p-5 rounded-lg bg-white solution-card"
               >
                 <svg
                   className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5"
@@ -270,7 +270,7 @@ export default async function IndustryPage({
             {details.results.map((result) => (
               <div
                 key={result.day}
-                className="p-8 rounded-xl border border-border text-center"
+                className="p-8 rounded-xl border border-border text-center timeline-card stat-card"
               >
                 <div className="text-2xl font-bold text-accent">
                   {result.day}
@@ -301,7 +301,7 @@ export default async function IndustryPage({
           <div className="mt-10">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center rounded-lg bg-accent px-10 py-4 text-lg font-semibold text-white hover:bg-accent-hover transition-colors"
+              className="inline-flex items-center justify-center rounded-lg bg-accent px-10 py-4 text-lg font-semibold text-white hover:bg-accent-hover transition-colors press-scale"
             >
               Get Your Free Audit
             </Link>
